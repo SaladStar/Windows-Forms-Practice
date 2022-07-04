@@ -1,0 +1,61 @@
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "New App";
+            InitializeMyButton();
+        }
+
+        private void InitializeMyButton()
+        {
+            Button button1 = new Button();
+
+            button1.Location = new System.Drawing.Point(400, 300);
+            button1.Size = new System.Drawing.Size(100, 30);
+
+            // Set the button to return a value of OK when clicked.
+            button1.DialogResult = DialogResult.OK;
+
+            // Add the button to the form.
+            Controls.Add(button1);
+
+        }
+
+
+
+        #endregion
+    }
+
+}
+
